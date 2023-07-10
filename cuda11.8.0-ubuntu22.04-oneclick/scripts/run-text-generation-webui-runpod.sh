@@ -2,7 +2,7 @@
 cd /workspace/text-generation-webui
 
 # Uncomment line below to enable SSL for websockets.
-# WSSPORT=$RUNPOD_TCP_PORT_5006
+# WSSPORT=5006
 
 if [ ! -z "$WSSPORT" ]; then
     echo "Setting up SSL"
