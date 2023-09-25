@@ -6,7 +6,7 @@ ARG DOCKER_FROM=thebloke/cuda$CUDA_VERSION-ubuntu$UBUNTU_VERSION-textgen:latest
 # Base image
 FROM $DOCKER_FROM as base
 
-ARG APTPKGS="zsh wget tmux tldr nvtop vim neovim curl rsync net-tools less iputils-ping 7zip zip unzip"
+ARG APTPKGS="zsh wget tmux tldr nvtop vim neovim curl rsync net-tools less iputils-ping 7zip zip unzip nginx openssl"
 
 # Install useful command line utility software
 RUN apt-get update -y && \
